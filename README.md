@@ -1,5 +1,7 @@
 # Survey Sparrow iOS SDK
 
+This is a swift package port of [surveysparrow-ios-sdk](https://github.com/surveysparrow/surveysparrow-ios-sdk)
+
 [SurveySparrow](https://surveysparrow.com) iOS SDK enables you to collect feedback from your mobile app. Embed the Classic, Chat & NPS surveys in your iOS application seamlessly with few lines of code.
 
 > Mobile SDK share channel is only available from SurveySparrow **Premium** plan onwards.
@@ -9,18 +11,13 @@
 2. [Integrate the feedback experience anywhere in your app.](#Embed-survey)
 3. [Schedule Surveys to take one-time or recurring feedbacks.](#Schedule-Surveys)
 
-## SDK integration (Deployment Target 9+)
+## SDK integration (Deployment Target iOS 11+, macOS 10.13+)
 
-### Add SurveySparrowSdk Framework
-Add SurveySparrowSdk Framework to your project either by using CocoaPods or directly embedding binary
-#### Using CocoaPods
-Add the following line to your `Podfile` file under `target`
-```pod
-pod 'SurveySparrowSdk', :git => 'https://github.com/surveysparrow/surveysparrow-ios-sdk.git', :tag => '0.3.0'
+#### Using Swift package manager
+Go to Xcode -> File -> Add Package Dependencies and add the following line in the search URL:
 ```
-
-#### Not using CocoaPods! Directly import SurveySparrowSdk
-Add `SurveySparrowSdk.xcodeproj` or `SurveySparrowSdk.framework` to your project.
+https://github.com/jonathanjr3/surveysparrow-ios-sdk-spm
+```
 
 ### Full-screen feedback
 Take feedback using our pre-build `SsSurveyViewController` and get the response after submission by implementing the `SsSurveyDelegate`'s `handleSurveyResponse` protocol.
