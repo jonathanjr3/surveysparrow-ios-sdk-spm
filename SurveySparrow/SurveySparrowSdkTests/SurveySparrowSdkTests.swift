@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import surveysparrow_ios_sdk_spm
+@testable import SurveySparrow
 
 class SurveySparrowSdkTests: XCTestCase {
 
