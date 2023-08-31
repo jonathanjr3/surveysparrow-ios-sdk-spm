@@ -56,10 +56,10 @@ func validateSurvey(domain: String? = nil,
                         do {
                         let responseData = try JSONDecoder().decode(ValidationResponse.self, from: jsonData);
                         active = responseData.active;
-                            let result = [
+                            var result = [
                             "active":responseData.active,
                             "reason":responseData.reason,
-                            ] as [String : Any]
+                            ] 
                             completion(result)
                             return
                         } catch {
