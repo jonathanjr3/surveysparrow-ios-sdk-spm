@@ -1,4 +1,6 @@
-# Survey Sparrow iOS SDK
+## Survey Sparrow iOS SDK
+
+### This repository has been archived since survey sparrow has officially released support for swift package
 
 This is a swift package port of [surveysparrow-ios-sdk](https://github.com/surveysparrow/surveysparrow-ios-sdk)
 
